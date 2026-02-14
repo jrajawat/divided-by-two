@@ -57,7 +57,7 @@ function normName(s) {
 function partyColor(partyType) {
   switch (normName(partyType).toLowerCase()) {
     case "multi-party": return "#2ca02c";
-    case "two-party": return "#1f77b4";
+    case "two-party": return "#ee0bcf";
     case "dominant-party": return "#ff7f0e";
     case "one-party": return "#d62728";
     case "non-partisan": return "#9467bd";
@@ -115,7 +115,6 @@ function makeLegend(map) {
       <div class="legend-row"><span class="swatch" style="background:${partyColor("dominant-party")}"></span> Dominant-party</div>
       <div class="legend-row"><span class="swatch" style="background:${partyColor("one-party")}"></span> One-party</div>
       <div class="legend-row"><span class="swatch" style="background:${partyColor("non-partisan")}"></span> Non-partisan</div>
-      <div class="small">Fill opacity approximates turnout (parliamentary).</div>
     `;
     return div;
   };

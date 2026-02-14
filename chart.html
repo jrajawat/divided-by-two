@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Turnout by Party System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .page {
+        padding: 16px;
+        font: 14px/1.3 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      }
+      .card {
+        background: white;
+        border: 1px solid #e6e6e6;
+        border-radius: 14px;
+        padding: 14px;
+        max-width: 980px;
+      }
+      .row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      a.buttonlike {
+        text-decoration: none;
+        border: 1px solid #ddd;
+        background: white;
+        padding: 6px 10px;
+        border-radius: 10px;
+        color: #111;
+      }
+      canvas { max-height: 520px; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="row">
+        <a class="buttonlike" href="index.html">Back to map</a>
+      </div>
+
+      <div class="card">
+        <h2 style="margin: 0 0 8px 0;">Average voter turnout by party system</h2>
+        <div style="color:#333; margin-bottom: 10px;">
+          Uses voter turnout CSV and party system JSON. This compares average turnout across party system types.
+        </div>
+        <canvas id="chart"></canvas>
+        <div id="summary" style="margin-top:10px; color:#333;"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>
