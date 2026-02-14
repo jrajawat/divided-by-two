@@ -20,3 +20,17 @@
 - Fill opacity represents voter turnout among registered voters.
 - Fill color represents the party system type.
 - The badges show how many countries successfully matched turnout and party system data.
+
+### Sources
+
+#### Voter turnout data:  
+World Population Review. (2026). Voter Turnout by Country.  
+https://worldpopulationreview.com/country-rankings/voter-turnout-by-country
+
+#### Country geometry data:  
+datasets/geo-countries (Natural Earth–derived GeoJSON)  
+https://github.com/datasets/geo-countries/blob/main/data/countries.geojson
+
+#### Party system classification reference:  
+Fiveable. Introduction to Comparative Politics – Comparative Analysis of Party Systems  
+https://fiveable.me/introduction-comparative-politics/unit-9/comparative-analysis-party-systems/study-guide/CUIxXkdVzK1juEQ4
