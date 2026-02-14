@@ -1,4 +1,4 @@
-# Divided by Two: The Illusion of Choice in Two-Party Politics
+# Divided by Two: The Failure of the Two-Party System
 
 ## Party System vs Voter Turnout World Map
 
