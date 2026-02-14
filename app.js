@@ -115,7 +115,7 @@ function makeLegend(map) {
       <div class="legend-row"><span class="swatch" style="background:${partyColor("dominant-party")}"></span> Dominant-party</div>
       <div class="legend-row"><span class="swatch" style="background:${partyColor("one-party")}"></span> One-party</div>
       <div class="legend-row"><span class="swatch" style="background:${partyColor("non-partisan")}"></span> Non-partisan</div>
-      <div class="small">Fill opacity approximates turnout (registered voters, parliamentary).</div>
+      <div class="small">Fill opacity approximates turnout (parliamentary).</div>
     `;
     return div;
   };

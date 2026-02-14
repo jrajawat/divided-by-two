@@ -17,7 +17,7 @@
 - Country geometry comes from a local Natural Earth–based GeoJSON file (`data/countries.geojson`), which is preprocessed to avoid antimeridian duplication issues.
 - Voter turnout data comes from `data/voter-turnout-by-country-2026.csv`.
 - Party system classifications come from `data/party_system.json`.
-- Fill opacity represents voter turnout among registered voters.
+- Fill opacity represents voter turnout.
 - Fill color represents the party system type.
 - The badges show how many countries successfully matched turnout and party system data.
 
