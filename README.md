@@ -1,6 +1,6 @@
-#Party System vs Voter Turnout World Map
+# Party System vs Voter Turnout World Map
 
-##How to run (recommended)
+## How to run (recommended)
 
 1) In the 'divided-by-two' folder, start a local server:
 
@@ -10,7 +10,7 @@
 2) Open in your browser:
    http://localhost:8000
 
-##Notes
+## Notes
 
 - Country geometry comes from a local Natural Earth–based GeoJSON file (data/countries.geojson), which is preprocessed to avoid antimeridian duplication issues.
 - Voter turnout data comes from data/voter-turnout-by-country-2026.csv.
