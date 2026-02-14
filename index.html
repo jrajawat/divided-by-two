@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Voter Turnout and Party System Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="header">
+    <h1>Voter turnout and party systems</h1>
+    <p class="description">
+      Fill opacity shows parliamentary turnout (registered voters).<br/>
+      Base color demonstrates party system type.
+    </p>
+
+    <div class="badge-row">
+      <span class="badge" id="badge-turnout">Turnout matched: ...</span>
+      <span class="badge" id="badge-party">Party matched: ...</span>
+    </div>
+
+    <div class="controls">
+      <button id="btn-refit">Fit to world</button>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
