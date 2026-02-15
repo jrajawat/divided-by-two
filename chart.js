@@ -97,32 +97,85 @@ async function main() {
     const dataAvg = stats.map(s => Number(s.avg.toFixed(2)));
 
     const ctx = document.getElementById("chart");
-    new Chart(ctx, {
+    new Chart(document.getElementById("chart"), {
         type: "bar",
         data: {
-            labels,
-            datasets: [
-                { label: "Average turnout (%)", data: dataAvg }
-            ]
+            labels: labels,
+            datasets: [{
+                label: "Average voter turnout (%)",
+                data: dataAvg,
+
+                // YOUR NEW BAR COLOR
+                backgroundColor: "#e1d2ff",
+                borderColor: "#c4a9ff",
+                borderWidth: 2,
+
+                borderRadius: 8,
+                hoverBackgroundColor: "#d4bfff"
+            }]
         },
+
         options: {
-            responsive: true,
-            scales: {
-                y: { beginAtZero: true, max: 100, title: { display: true, text: "Turnout (%)" } },
-                x: { title: { display: true, text: "Party system type" } }
-            },
             plugins: {
-                tooltip: {
-                    callbacks: {
-                        afterLabel: (ctx) => {
-                            const s = stats[ctx.dataIndex];
-                            return `n=${s.n}, min=${s.min.toFixed(1)}%, max=${s.max.toFixed(1)}%`;
-                        }
+                legend: {
+                    labels: {
+                        font: {
+                            size: 16,
+                            weight: "bold"
+                        },
+                        color: "#111"
+                    }
+                },
+
+                title: {
+                    display: false
+                }
+            },
+
+            scales: {
+
+                x: {
+                    ticks: {
+                        font: {
+                            size: 15,
+                            weight: "bold"
+                        },
+                        color: "#111"
+                    },
+                    title: {
+                        display: true,
+                        text: "Party system type",
+                        font: {
+                            size: 16,
+                            weight: "bold"
+                        },
+                        color: "#111"
+                    }
+                },
+
+                y: {
+                    ticks: {
+                        font: {
+                            size: 15,
+                            weight: "bold"
+                        },
+                        color: "#111"
+                    },
+                    title: {
+                        display: true,
+                        text: "Average voter turnout (%)",
+                        font: {
+                            size: 16,
+                            weight: "bold"
+                        },
+                        color: "#111"
                     }
                 }
+
             }
         }
     });
+
 }
 
 main().catch(err => {
