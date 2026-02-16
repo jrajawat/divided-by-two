@@ -21,6 +21,8 @@
 - Fill color represents the party system type.
 - The badges show how many countries successfully matched turnout and party system data.
 
+Further analysis can be found [here](https://docs.google.com/presentation/d/1-u98jVnhOpqCMqmnke6zAQ1IaF2nMOHCqXY_sAcjGQo/edit?usp=sharing)
+
 ### Sources
 
 #### Voter turnout data:  
